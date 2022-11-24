@@ -39,7 +39,7 @@ function menu() {
     }
   }
 
-  getMenuCards("https://github.com/ZavadskiSlava/stadyProject-food/blob/5536b6488f5612b07a8fa3f3a18121858726f013/db.json").then((data) => {
+  getMenuCards("https://raw.githubusercontent.com/ZavadskiSlava/stadyProject-food/main/db.json").then((data) => {
     data.forEach(({ img, altimg, title, descr, price }) => {
       new Menu(img, altimg, title, descr, price, ".menu .container").render();
     });
